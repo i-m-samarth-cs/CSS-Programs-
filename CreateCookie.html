@@ -1,0 +1,29 @@
+<html>
+    <head><title>Cookie Example</title></head>
+    <body>
+        <form name="myform" action="Get">
+        <input type="button" value="setCookie" onclick="setCookie()">
+        <input type="button" value="getCookie" onclick="getCookie()">
+
+    </form>
+        <script>
+        
+        function setCookie()
+        {
+            document.cookie="username = Samarth Shendre";
+            document.write="Cookies Stored";
+        }
+        function getCookie()
+        {
+            if(document.cookie.length !=0)
+            {
+                document.write=""+document.cookie;
+            }
+            else
+            {
+                document.write="Cookies Unavailable"
+            }
+        }
+    </script>
+    </body>
+</html>

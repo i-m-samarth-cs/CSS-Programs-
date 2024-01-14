@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <select id="Fruits">
+            <option value=""></option>
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Grapes">Grapes</option>
+
+        </select>
+        <input type="submit" value="Validate" onclick="Validate()"/>
+        <script type="text/javascript">
+            function Validate()
+            {
+                var addFruits=document.getElementById("Fruits");
+                var a=Fruits.value;
+                if(a=="")
+                {
+                    alert("Please select an Option")
+                    return false;
+                }
+                else
+                {
+                    alert("You have selected"+a);
+                }
+            }
+        </script>
+    </body>
+</html>

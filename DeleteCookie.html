@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Delete Cookie</title>
+        <script type="text/javascript">
+            function deleteCookie()
+            {
+                var cookievalue=name.value;
+                document.cookie="name="+cookievalue +"; expires=Thur, 23 11 2022 11:52:59 GMT">
+                alert("Cookies Deleted");
+            }
+        </script>
+    </head>
+    <body>
+        Enter Name:<input type="text" id ="name">
+        <input type="button" value="Delete Cookie" onclick="deleteCookie()">
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="Javascript">
+MyBooks=new Array(‘vb2010book.jpg','vb2008book.jpg','vb6book.jpg')
+book=0
+function ShowCover(book)
+{
+    document.DisplayBook.src=MyBooks[book]
+}
+</script>
+</head>
+<body>
+
+<P align="center"><imgsrc="vb2010book.jpg" name="DisplayBook"/><p>
+<center>
+<table border=0>
+<tr>
+<td align=center><a onmouseover="ShowCover(0)"></a>
+    <b>Visual Basic 2010 Made Easy</b></a><br>
+<a onmouseover="ShowCover(1)"><b>Visual Basic 2008 Made Easy</b></a><br>
+<a onmouseover="ShowCover(2)"><b>Visual Basic 6 Made Easy</b></a><br>
+</td>
+</tr>
+</table>
+</body>
+</html>

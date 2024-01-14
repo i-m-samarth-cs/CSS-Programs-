@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    <script>
+        function init()
+        {
+            var panel=document.getElementById('panel');
+            var btn=document.getElementById('btn')
+            btn.addEventListener("mousedown",mouseDown);
+            btn.addEventListener("mouseup",mouseUp);
+
+            function dbClick()
+            {
+                panel.innerHTML+="mouse double CLicked </br>"
+            }
+            function mouseUp()
+            {
+                panel.innerHTML+="Mouse Up</br>"
+            }
+            function mouseDown()
+            {
+                panel.innerHTML+="Mouse Down </br>"
+            }
+        }
+    </script>
+    </head>
+    <body onload="init()">
+        <input type="button" id="btn"value="Click ME"onclick="dbClick()"
+        onmousemove="mouseMove"/>
+        <h3>Mouse Events Performed</h3>
+        <pid="panel"></pid>
+    </body>
+</html>

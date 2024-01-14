@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language="Javascript">
+MyBanners=new Array('Screenshot_20210428-142506_Free Fire.jpg','Screenshot_20210727-142933_Free Fire.jpg','Screenshot_20210821-120028_Free Fire.jpg','Screenshot_20211020-221310_Free Fire.jpg')
+banner=0
+function ShowBanners()
+{ if (document.images)
+{ banner++
+if (banner==MyBanners.length) {
+banner=0}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",5000)
+}
+}
+</script>
+<body onload="ShowBanners()">
+<center>
+<img src="Screenshot_20210428-142506_Free Fire.jpg" width="1500" height="500" name="ChangeBanner"/>
+</center>
+</body>
+</html>

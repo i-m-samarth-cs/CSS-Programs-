@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type ="text/javascript">
+function readOnlyFunction()
+{ 
+    document.forms.myform.name.readOnly=true
+}
+</script>
+</head>
+<body>
+<form name="myform">
+ Username: <input type="text" name="name"/>
+ <br/> <br/>
+ <input type="button" value="Read-only Name Field" onclick= "readOnlyFunction()"/>
+ </form>
+ </body>
+ </html>

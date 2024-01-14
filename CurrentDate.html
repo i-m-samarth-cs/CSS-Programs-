@@ -1,0 +1,31 @@
+function resolveAfter2Seconds() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 2000);
+    });
+  }
+  
+  async function asyncCall() {
+    console.log('calling');
+    const result = await resolveAfter2Seconds();
+    console.log(result);
+    // expected output: "resolved"
+  }
+  
+  window.addEventListener('load', async (event) => {
+    let loading = true 
+    // this loading value helps you to know when to show your loader
+  
+    await console.log('page is loading');
+    await asyncCall()
+  
+    loading = false
+    console.log('page is loaded');
+  });
+
+
+
+
+  
+  
