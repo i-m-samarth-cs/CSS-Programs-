@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>Object Types</title>
+ </head>
+ <body>
+  
+   <br><br>
+   <h1>Create Own Objects</h1>
+   <script type="text/javascript">
+   
+   function Person(name,age)
+   {
+	 this.name=name;
+	 this.age=age;
+   }
+   Person.prototype.show=function()
+   {
+	 document.write("<h1>"+this.name);
+	 document.write("<h1>"+this.age);
+   }
+
+   var obj1=new Object();
+   var obj2=new Date();
+   document.write("Date="+obj2);
+
+   var obj3=new Person("Samarth",230);
+   obj3.display();
+  </script>
+  </body>
+  </html>
+   
+   
+   

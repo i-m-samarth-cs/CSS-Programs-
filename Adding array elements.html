@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Adding Array Elements</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var a =new Array(3);
+
+            a[0]="One";
+            a[1]="Two";
+            a[2]="Three";
+            a[3]="Four";
+
+            //Push()
+            a.push("Five");
+            a.push("Six","Seven");
+
+            //Unshift()
+            a.unshift("Zero");
+
+            //Lenght Property
+            a[a.length]="Eight";
+            a[a.length]="Nine";
+
+            //Index Number
+            var b=a.length;
+            a[b]="Ten";
+
+            document.write("<h1> Displaying Array Elements" +"<br>");
+            for(var i=0;i<a.length;i++)
+            {
+                document.write("<br>");
+                document.write(a[i]);
+            }
+            
+        </script>
+    </body>
+</html>

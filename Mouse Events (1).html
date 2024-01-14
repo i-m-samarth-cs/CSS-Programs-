@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    <body>
+        <br><br>
+        <h1>Mouse Events in Javascript</h1>
+        <br><br>
+        <div id="Div1"></div>
+        <script type="text/javascript">
+            function clickResponse()
+            {
+                this.innerHTML +="Mouse Clicked <br>";
+            }
+            function dblClickResponse()
+            {
+                this.innerHTML +="Mouse Double Clicked <br>";
+            }
+            function mouseUpResponse()
+            {
+                this.innerHTML +="Mouse Button UP <br>";
+            }
+            function mouseDownResponse()
+            {
+                this.innerHTML +="Mouse Button Down <br>";
+            }
+            function init()
+            {
+                var mydiv=document.getElementById("Div1");
+            
+            mydiv.innerHTML="Click Here <br>";
+
+            //Event Handler
+            mydiv.onclick=clickResponse;
+            mydiv.ondblclick=dblClickResponse;
+            mydiv.onmousedown=mouseDownResponse;
+            mydiv.onmouseup=mouseDownResponse;
+        }
+        document.addEventListener("DOMContentLoaded",init,false);
+    </script>
+        </body>
+        </html>

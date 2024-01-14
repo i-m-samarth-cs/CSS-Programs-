@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Array Methods</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var a=new Array(10,20,30,20,50,20);
+            var b=new Array(40,50,60);
+
+            //join
+            document.write("<h2> Array A:"+a.join("-")+"</h2>");
+
+            //concat()
+            document.write("<h2> Array B:"+b.concat()+"</h2>")
+
+            //indexOf()
+            document.write("<h2> Index Of 20:"+a.indexOf(20)+"</h2>")
+
+            //LastindexOf()
+            document.write("<h2> Index Of 20:"+a.lastIndexOf(20)+"</h2>")
+
+            //pop()
+            var x=b.pop();
+            document.write("<h2> Element Poped from Array B:"+x+"</h2>")
+
+            //push()
+            a.push(99);
+
+            //reverse()
+           a.reverse();
+
+           //shift()
+           var y=b.shift();
+           document.write("<h2> Ist Element Removed from Array:"+y+"</h2>");
+
+           //slice()
+           var z=a.slice(1,3);
+           document.write("<h2> Sliced Section of Array A:"+z+"</h2>");
+
+           //toString()
+           var str=a.toString();
+           document.write("<h2> String Representation:"+str+"</h2>")
+        </script>
+    </body>
+</html>

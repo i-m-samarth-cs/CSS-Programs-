@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>String</title>
+    </head>
+    <body>
+        <br><br>
+        <h1>String Methods</h1>
+        <br><br>
+        <script type="text/javascript">
+        var str1=new String("Welcome to Javascript");
+        var str2=new String("Programming");
+        var a;
+
+        //1.charAt()
+        a=str1.charAt(2);
+        document.write("<h2>"+a);
+
+        //2.charCodeAt()
+        a=str1.charCodeAt(2);
+        document.write("<h2>"+a);
+
+        //3.concat()
+        a=str1.concat(str2);
+        document.write("<h2>"+a);
+
+        //4.indexOf()
+        a=str1.indexOf("come");
+        document.write("<h2>"+a);
+        
+        //5.lastIndexOf()
+        a=str1.lastIndexOf("o");
+        document.write("<h2>"+a);
+
+        //6.replace()
+        a=str1.replace("script","Programming");
+        document.write("<h2>"+a);
+
+        //7.search()
+        a=str1.search("world");
+        document.write("<h2>"+a);
+
+        //8.slice()
+        a=str1.slice(3,7);
+        document.write("<h2>"+a);
+
+        //9.split()
+        a=str1.split(" ",5);
+        document.write("<h2>"+a);
+
+        //10.substr()
+        a=str2.substr(4,4);
+        document.write("<h2>"+a);
+
+        //11.subString()
+        a=str2.subString(4,8);
+        document.write("<h2>"+a);
+
+        //12.toLowerCase()
+        a=str2.toLowerCase();
+        document.write("<h2>"+a);
+
+       //13.toUpperCase()
+        a=str2.toUpperCase();
+        document.write("<h2>"+a);
+    </script>
+    </body>
+</html>

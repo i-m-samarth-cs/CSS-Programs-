@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <title>Classes and Properties</title>
+ </head>
+<body>
+ <script type="text/javascript">
+ function Person(name,age)
+ {
+	this.name=name;
+	this.age=age;
+ }
+ Person.prototype.show=function()
+ {
+	document.write(this.name);
+    document.write(this.age);
+ }
+ 
+ var obj=new Person("Samarth",230);
+ obj.show();
+
+</script>
+</body>
+</html>

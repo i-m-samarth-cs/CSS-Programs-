@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Functions </title>
+    </head>
+    <body>
+        <h1>Factorial using Recursion</h1>
+        <br><br>
+        <script type="text/javascript">
+            var fact=1;
+            var n=5;
+            function factorial(n)
+            {
+                if(n==1)
+	            {
+	            	return 1;
+	            }
+	            else
+	            {
+	            	fact=factorial(n-1)*n;
+                    return fact;
+            	}
+                
+            }
+            var f=factorial(4);
+            document.write("<h1>Factorial is:"+f);
+            
+        </script>
+    </body>
+</html>

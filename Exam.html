@@ -1,9 +1,17 @@
-<!DOCTYPE html>
 <html>
-<body>
-<script>
-var add=new Function("num1","num2","return num1+num2");
-document.writeln(add(2,5));
-</script>
-</body>
+   <head>
+      <script>
+         var a=window.prompt("Please Enter Number");
+         
+         //var reg=/[0-9]/;
+         if(a.test(/0-9/))
+         {
+            document.write("Valid");
+         }
+         else
+         {
+            document.write("Invalid");
+         }
+      </script>
+   </head>
 </html>

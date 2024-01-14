@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    
+        
+        <body style="background-color:yellow">
+        <br><br>
+        <h1>Mouse Events in Javascript</h1>
+        <br><br>
+        <div id="Div2" style="background-color:cyan"></div>
+        <script type="text/javascript">
+            var mydiv,flag;
+            mydiv=document.getElementById("Div2");
+            flag=true;
+            mydiv.innerHTML="Move the Mouse..."
+            //Event Handlers
+            document.onmousemove=mousemove;
+            mydiv.onmouseover=mouseover;
+            mydiv.onmouseout=mouseout;
+
+            function mousemove(e)
+            {
+                if(flag)
+                {
+                    mydiv.innerHTML="<h1> Mouse is at X="+e.x+" Y ="+e.y+"</h1>"
+                }
+            }
+            function mouseover()
+            {
+                flag=false;
+                mydiv.innerHTML="<h1> Mouse is Over Div </h1>";
+            }
+            function mouseout()
+            {
+                flag=true;
+
+            }
+        </script>
+        </body>

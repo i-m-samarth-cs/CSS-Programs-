@@ -1,0 +1,27 @@
+<html>
+ <head>
+   <title>Class and Property Accept Value</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+   class Student
+   {
+	  constructor(name,rollno,marks)
+      {
+	     this.name=name;
+		 this.rollno=rollno;
+	 	 this.marks=marks;
+      }
+      display()
+	  {
+	    document.write("<h1>Student Details");
+		document.write("<h1>"+this.name);
+		document.write("<h1>"+this.rollno);
+		document.write("<h1>"+this.marks);
+     }
+  }
+  var stud=new Student("Samarth",230,93.00);
+  stud.display();
+ </script>
+ </body>
+ </html>

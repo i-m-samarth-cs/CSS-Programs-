@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Key Events</title>
+    </head>
+    <body style="background-color:yellow">
+        <br><br>
+        <h1>Key Events in Javascript</h1>
+        <br><br>
+        <div id="Div1" style="background-color:cyan">
+
+        </div>
+        <script type="text/javascript">
+            var mydiv;
+            mydiv=document.getElementById("Div1");
+            mydiv.innerHTML="Press a Key....";
+
+            // Event Listeners
+            document.onkeydown=keydown;
+            document.onkeyup=keyup;
+            document.onkeypress=keypress;
+
+            document.addEventListener("keydown",keydown,false);
+            document.addEventListener("keyup",keyup,false);
+            document.addEventListener("keypress",keypress,false);
+
+            function keydown()
+            {
+                mydiv.innerHTML +="<br> Key Down ";
+            }
+            function keyup()
+            {
+                mydiv.innerHTML +="<br> Key Up (Release)";
+            }
+            function keypress()
+            {
+                var keynum=(window.event)?event.keyCode:e.which;
+                mydiv.innerHTML+= "<br>"+String.fromCharCode(keynum);
+            }
+
+        </script>
+    </body>
+</html>

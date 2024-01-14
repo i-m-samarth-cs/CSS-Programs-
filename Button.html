@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Button Input</title>
+    </head>
+    <body>
+        <br><br>
+        <h1>Demostration of Buttons</h1>
+        <br><br>
+        <form method="" action="">
+            <h3>Enter value of A:<input type="text" id="txt1"></h3>
+            <br><br>
+            <h3>Enter value of B:<input type="text" id="txt2"></h3>
+            <br><br>
+
+            <input type="button" value ="Find Sum "onclick="calculate()">
+            <br><br>
+
+            <h3>Sum=<input type="text"id="txt3"></h3>
+            <br><br>
+            <script type="text/javascript">
+                function calculate()
+                {  
+                    var a=document.getElementById("txt1").value;
+                    var b=document.getElementById("txt2").value;
+
+                    var sum=parseInt(a)+parseInt(b);
+                    document.getElementById("txt3").value=sum;
+                 
+                }
+
+            </script>
+
+        </form>
+    </body>
+</html>

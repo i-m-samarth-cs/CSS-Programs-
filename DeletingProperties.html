@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Deleting Properties</title>
+  </head>
+  <body>
+    <br><br>
+     <h1>Deleting Properties</h1>
+    <br><br>
+    <script type="text/javascript">
+    var stud={name:"Samarth",rollno:328,percentage:84.00}
+
+    var nm=stud.name;
+    var ro=stud.rollno;
+	var per=stud.percentage;
+
+	document.write("<h2> Getting Properties </h2>");
+    document.write(nm + "<br>");
+    document.write(ro + "<br>");
+    document.write(per + "<br>");
+
+	stud.name="Soham";
+    stud.rollno=154;
+    stud.percentage=90.00;
+
+   document.write("<h2> Setting Properties </h2>");
+    document.write(stud.name + "<br>");
+    document.write(stud.rollno + "<br>");
+    document.write(stud.percentage + "<br>");
+
+   delete stud.percentage
+  </script>
+ </body>
+</html>
+   

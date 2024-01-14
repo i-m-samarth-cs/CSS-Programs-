@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Prime Number 1-50</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var num;
+            var i;
+            function prime()
+            {
+                for(num=1;num<=50;num++)
+                {
+                    var flag=0;
+                    for(i=2;i<=num;i++)
+                    {
+                    if(num%i==0&& i!==num)
+                    {
+                        var flag=1;
+                  
+                    }
+                }
+                    
+                    
+                    if(flag==0)
+                    {
+                        document.write("<h4> "+num);
+                    }
+                    else
+                    {
+                        //No
+                    }
+                }
+                
+            }
+            prime();
+        </script>
+    </body>
+</html>

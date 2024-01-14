@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <title>Avg of 3 Subjects</title>
+ </head>
+
+ <body>
+   <script type="text/javascript">
+    var m1=70;
+    var m2=80;
+    var m3=50;
+    var sum
+    var avg;
+
+    sum=m1+m2+m3;
+    avg=sum/3.0
+    document.write("<h1> Marks of 3 Subjects");
+    document.write("<h2> M1="+m1+"</h2>");
+    document.write("<h2> M2="+m2+"</h2>");
+    document.write("<h2> M3="+m3+"</h2>");
+    document.write("<h2> Total ="+sum+"</h2>");
+
+    document.write("<h2> Average:"+avg+"</h2>");
+
+    if(m1>=40 && m2>=40 && m3>=40)
+    {
+	  if(avg>=80)
+      {
+		 document.write("<h1>Grade A");
+      }
+	  else if(avg>=60)
+      {
+		 document.write("<h1>Grade B");
+      }
+      else 
+      {
+		 document.write("<h1>Grade C");
+      }
+    }
+    else
+    {
+	   document.write("Fail");
+    }
+   </script>
+  </body>
+  </html>
+

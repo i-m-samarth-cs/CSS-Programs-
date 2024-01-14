@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Disabling Elements</title>
+        <script type="text/javascript">
+            function EnableDisable()
+            {
+                var text=document.getElementById("mytext");
+                if('disabled'in text)
+                {
+                    text.disabled=!text.disabled;
+                }
+            }
+        </script>
+    </head>
+    <body style="background-color: cyan;">
+        <br><br>
+        <h1>Disabling Elements</h1>
+        <br><br>
+
+        <input type="text" id="mytext" disabled="disabled" value="Disabled Value">
+        <input type="button" value="Change Status" onclick="EnableDisable()">
+    </body>
+</html>

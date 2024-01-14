@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sorting in Arrays</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var a1=["RED","Red","red","Green","Blue"];
+          var a2=[10,3,1,45,44,12];
+          document.write("<h2>Before Sorting A1 = "+a1+"</h2>");
+          a1.sort()
+          a1.reverse();
+          document.write("<h2>After Sorting A1 = "+a1+"</h2>");
+          document.write("<h2>Before Sorting A2 = "+a2+"</h2>");
+          a2.sort(function(a,b){return b-a});//fucntion to sort number array
+          //a2.reverse();
+          document.write("<h2>After Sorting A2 = "+a2+"</h2>");
+        </script>
+    </body>
+</html>
